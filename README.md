@@ -112,4 +112,4 @@ public class BaseFragmentAdapter extends TabFragmentAdapter {
 答：直接点击 File>Invalidate Caches/Restart后编译通过
 
 ## 十.No slave process to process jobs, aborting，gradle plugin 3.0.1
-答:关闭掉后台的aapt进程，然后重新运行，如果还不行，再关掉jvm进程，重新运行。
+答:关掉jvm进程，重新运行。
