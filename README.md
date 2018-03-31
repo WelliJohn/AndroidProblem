@@ -108,8 +108,5 @@ public class BaseFragmentAdapter extends TabFragmentAdapter {
 ## 八.ScollView或者RecyclerView等自动滚动的处理？
 答：[ScrollVIew自动滚动的解决方案](https://juejin.im/post/5a2a04726fb9a045055e0993)
 
-## 九.Error:Execution failed for task :app:processDebugAndroidTestResources.No slave process to process jobs, aborting
-答：直接点击 File>Invalidate Caches/Restart后编译通过
-
-## 十.No slave process to process jobs, aborting，gradle plugin 3.0.1
+## 九.No slave process to process jobs, aborting，gradle plugin 3.0.1
 答:关掉jvm进程，重新运行。
