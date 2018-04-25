@@ -110,3 +110,6 @@ public class BaseFragmentAdapter extends TabFragmentAdapter {
 
 ## 九.No slave process to process jobs, aborting，gradle plugin 3.0.1
 答:关掉jvm进程，重新运行。
+
+## 十.AndroidStudio运行的时候，没办法run，select Android SDK。
+答:这个多半是因为异常退出导致AS再次启动运行异常了，就算下SDK的路径配置正确，也需要重新配置下，点击File->Settings->Android SDK LOcation:Edit重新配置下就好了
