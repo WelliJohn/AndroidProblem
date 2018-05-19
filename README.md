@@ -113,3 +113,23 @@ public class BaseFragmentAdapter extends TabFragmentAdapter {
 
 ## 十.AndroidStudio运行的时候，没办法run，select Android SDK。
 答:这个多半是因为异常退出导致AS再次启动运行异常了，就算下SDK的路径配置正确，也需要重新配置下，点击File->Settings->Android SDK LOcation:Edit重新配置下就好了
+
+## 十一.界面切换选择某个数据，然后onActivityResult中设定某个TextView的text的时候，可能导致TextView的高度发生改变，会出现黑边的情况？
+答：在这个TextView的上方在包括一层RelativeLayout
+```
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/margin_15"> 
+            
+            //你的TextView的布局
+       </RelativeLayout>
+
+</RelativeLayout>
+```
