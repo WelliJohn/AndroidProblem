@@ -133,3 +133,16 @@ public class BaseFragmentAdapter extends TabFragmentAdapter {
 
 </RelativeLayout>
 ```
+
+## 十二.dialog高度自适应设置？
+找到dialog的根view的控件，通过下面的代码就可以设置屏幕的80%高度显示
+```
+ root.post(new Runnable() {
+            @Override
+            public void run() {
+                ViewGroup.LayoutParams layoutParams = root.getLayoutParams();
+                layoutParams.height = (int) (UIUtils.getScreenHeight(mContext) * 0.8);
+                root.setLayoutParams(layoutParams);
+            }
+        });
+```
